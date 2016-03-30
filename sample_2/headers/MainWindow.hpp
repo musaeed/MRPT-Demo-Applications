@@ -7,6 +7,8 @@
 #include <QFileDialog>
 #include <QProcess>
 #include <QKeyEvent>
+#include <QScreen>
+#include <QClipboard>
 #include <vector>
 #include <map>
 #include <mrpt/gui/CDisplayWindow3D.h>
@@ -67,6 +69,8 @@ private slots:
     void on_actionHelp_triggered();
 
     void on_actionProperty_Editor_triggered();
+
+    void on_actionCapture_Image_triggered();
 
 private:
     Ui::MainWindow *ui;

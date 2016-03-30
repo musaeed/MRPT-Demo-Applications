@@ -6,5 +6,6 @@
         <file>Actions-help-about-icon.png</file>
         <file>help.html</file>
         <file>Options-icon.png</file>
+        <file>camera-icon.png</file>
     </qresource>
 </RCC>

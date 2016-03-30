@@ -42,6 +42,7 @@
      <string>Tools</string>
     </property>
     <addaction name="actionProperty_Editor"/>
+    <addaction name="actionCapture_Image"/>
     <addaction name="actionFull_Screen"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -69,6 +70,7 @@
    </attribute>
    <addaction name="actionOpen"/>
    <addaction name="actionProperty_Editor"/>
+   <addaction name="actionCapture_Image"/>
    <addaction name="actionFull_Screen"/>
    <addaction name="actionHelp"/>
    <addaction name="actionExit"/>
@@ -128,6 +130,18 @@
    </property>
    <property name="toolTip">
     <string>Edit the properties of the scene</string>
+   </property>
+  </action>
+  <action name="actionCapture_Image">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/new/prefix1/camera-icon.png</normaloff>:/new/prefix1/camera-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Capture Image</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy the image of gl widget to the clipboard</string>
    </property>
   </action>
  </widget>

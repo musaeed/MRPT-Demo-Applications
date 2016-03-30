@@ -18,7 +18,8 @@ find_package(GLUT REQUIRED)
 find_package(Qt5Core REQUIRED)
 find_package(Qt5OpenGL)
 
-#include some of the folders used
+
+# Tell CMake to create the helloworld executable
 include_directories("headers")
 include_directories("ui")
 include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} )

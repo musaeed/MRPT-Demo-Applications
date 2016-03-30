@@ -1,5 +1,5 @@
 #include "../headers/MainWindow.hpp"
-#include "ui_MainWindow.h"
+#include "/home/muhammad/Desktop/MRPT/samples/build-qt_integration-Desktop-Default/ui_MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->actionFull_Screen->setShortcut(Qt::Key_F11);
     ui->actionHelp->setShortcut(Qt::Key_F1);
     ui->actionOpen->setShortcut(Qt::Key_O | Qt::CTRL);
+    ui->actionCapture_Image->setShortcut(Qt::Key_I | Qt::CTRL);
     ui->actionProperty_Editor->setShortcut(Qt::Key_P | Qt::CTRL);
 
 }
@@ -114,4 +115,17 @@ void MainWindow::on_actionProperty_Editor_triggered()
     PropertyEditor dialog(this);
     dialog.setWindowTitle("Property Editor");
     dialog.exec();
+}
+
+void MainWindow::on_actionCapture_Image_triggered()
+{
+
+    QtGL* w = ui->centralWidget->findChild<QtGL*>("widget");
+    QScreen *screen = QGuiApplication::primaryScreen();
+    QPixmap pixmap;
+    if (screen)
+        pixmap = screen->grabWindow(w->winId());
+
+     QApplication::clipboard()->setPixmap(pixmap);
+     QMessageBox::information(this,"Capture image", "Successfully copied the image to the clipboard!");
 }
