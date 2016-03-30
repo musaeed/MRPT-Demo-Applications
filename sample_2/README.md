@@ -30,7 +30,6 @@ This app can open any MRPT .gridmap file and render it. Please use the property 
 | Left key drag  | Change Azimuth angle   |
 | Right key drag | Change Elevation angle |
 
-
 ## Screenshots
 
 These are some of the screenshots of how the GUI looks like and gives insight to some of the functionality
@@ -42,6 +41,10 @@ Main GUI also showing the Help Dialog
 Property editor with some of the properties altered
 
 ![enter image description here](https://raw.githubusercontent.com/musaeed/MRPT-Demo-Applications/master/Other_files/gridmap_2.png)
+
+The capture image feature
+![enter image description here](https://raw.githubusercontent.com/musaeed/MRPT-Demo-Applications/master/Other_files/gridmap_4.png)
+
 
 GUI in the full screen
 
