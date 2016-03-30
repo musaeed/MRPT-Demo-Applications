@@ -16,7 +16,8 @@ This app can open any MRPT .gridmap file and render it. Please use the property 
 | CTRL+O          | Open file                |
 | CTRL+P          | Property editor          |
 | CTRL+I          | Capture image            |
-| F11             | Help                     |
+| F11             | Full screen              |
+| F1			   | Help					|
 | Arrow key right | Decrease Azimuth angle   |
 | Arrow key left  | Increase Azimuth angle   |
 | Arrow key up    | Increase Elevation angle |
